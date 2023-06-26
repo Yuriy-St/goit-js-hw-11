@@ -1,0 +1,35 @@
+@import url('./reset.css');
+@import url('./loader.css');
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  background: #acd8e2; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(
+    to right,
+    #1cefff,
+    #c0c0aa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body > .container {
+  margin-top: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.photo-card {
+}
+.info {
+}
+.info-item {
+}
