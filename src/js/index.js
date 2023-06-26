@@ -7,6 +7,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { Report } from 'notiflix';
 
+const formRef = document.getElementById('search-form');
+
 function processError(err) {
   if (!document.getElementById('breed-container').classList.contains('is-hidden')) {
     touggleElement(breedSelectRef, 'on');
