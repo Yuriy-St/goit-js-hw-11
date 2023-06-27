@@ -6,8 +6,8 @@ const API_KEY = '37874154-0c182140a298a4e7b14c7c4d9';
 
 const DEF_OPTIONS = {
   key: API_KEY,
-  image_type: photo,
-  orientation: horizontal,
+  image_type: 'photo',
+  orientation: 'horizontal',
   safesearch: true,
 };
 
