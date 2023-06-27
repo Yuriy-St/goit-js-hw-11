@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
-    <title>Homework 10</title>
+    <title>Homework 11</title>
   </head>
   <body>
     <div class="header">
       <div class="container">
         <form class="search-form" id="search-form">
-          <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-          <button type="submit">Search</button>
+          <input
+            type="text"
+            class="search-input"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="submit-btn" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -20,7 +26,8 @@
       <ul class="gallery list">
         <!-- Картки зображень -->
       </ul>
-
+    </div>
+    <div class="container footer">
       <button type="button" class="load-more is-hidden">Load more</button>
     </div>
     <script type="module" src="./js/index.js"></script>

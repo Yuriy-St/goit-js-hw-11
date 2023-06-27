@@ -25,10 +25,12 @@ module.exports.searchPictures = async function (options) {
 
   try {
     const response = await axios(config);
+    if (response.status !== 200) throw response.data;
     return response;
   } catch (err) {
-    const { response, request, message } = err;
+    const { response } = err;
+    if (response?.data) throw { message: response.data };
 
-    return response || request || message;
+    throw response || err;
   }
 };
